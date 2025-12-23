@@ -6,7 +6,7 @@
     <title>Wide Angle Agile</title>
 
     <style>
-        body, h1, h2, h3, p, ul {
+        body, h1, h2, h3, p, ul, li {
             margin: 0;
             padding: 0;
         }
@@ -53,22 +53,28 @@
             font-size: 1.05rem;
         }
 
-        ul {
-            list-style: none;
+        ol {
             margin-top: 1rem;
-        }
-
-        ul li {
-            margin-bottom: 0.75rem;
             padding-left: 1.2rem;
-            position: relative;
         }
 
-        ul li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #555;
+        ol li {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-link {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 1rem;
+        }
+
+        .contact-link a {
+            color: #0055ff;
+            text-decoration: none;
+        }
+
+        .contact-link a:hover {
+            text-decoration: underline;
         }
 
         footer {
@@ -84,22 +90,6 @@
             color: #0055ff;
             font-weight: 500;
         }
-
-        /* Contact link styling */
-        .contact-link {
-            text-align: center;
-            margin-top: 2rem;
-            font-size: 1rem;
-        }
-
-        .contact-link a {
-            color: #0055ff;
-            text-decoration: none;
-        }
-
-        .contact-link a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 
@@ -110,44 +100,57 @@
 
     <main>
         <section>
-            <h2>What is Wide Angle Agile?</h2>
+            <h2>Wide Angle Agile Principles</h2>
             <p>
-                Wide Angle Agile is a practical, compliance‑ready approach to agile delivery for regulated environments.
-                It expands the traditional agile lens to include risk, documentation, verification, and user experience
-                without slowing teams down.
+                Wide Angle Agile reframes core priorities for regulated environments, inspired by the Agile Manifesto:
             </p>
-        </section>
 
-        <section>
-            <h2>Why It Works</h2>
-            <ul>
-                <li>Integrates compliance and agility without unnecessary overhead</li>
-                <li>Supports clear, audit‑ready documentation as part of normal work</li>
-                <li>Improves cross‑functional alignment and decision‑making</li>
-                <li>Strengthens risk visibility and mitigation throughout development</li>
-            </ul>
-        </section>
+            <ol>
+                <li>
+                    <strong>Integrated compliance over end-of-project remediation</strong><br>
+                    Compliance is not a phase or a checkpoint—it is part of the daily workflow.
+                </li>
 
-        <section>
-            <h2>Core Principles</h2>
-            <ul>
-                <li>Clarity over volume in documentation</li>
-                <li>Risk‑informed decision‑making at every stage</li>
-                <li>Human‑centered communication and collaboration</li>
-                <li>Iterative learning that includes compliance, not avoids it</li>
-            </ul>
-        </section>
+                <li>
+                    <strong>Continuous risk management over delayed risk documentation</strong><br>
+                    Risks are identified, assessed, and mitigated as designs evolve, not after they are finalized.
+                </li>
 
-        <section>
-            <h2>Who It’s For</h2>
-            <p>
-                Wide Angle Agile is designed for teams working in regulated industries—medical devices, healthcare,
-                finance, and any environment where safety, quality, and traceability matter.
+                <li>
+                    <strong>Stakeholder-ready documentation over sprint-only outputs</strong><br>
+                    Documentation exists to support decisions, audits, and patient safety—not just velocity.
+                </li>
+
+                <li>
+                    <strong>Adaptable structure over rigid frameworks</strong><br>
+                    Processes, tools, and ceremonies evolve based on what works for a unique team in a regulated context.
+                </li>
+
+                <li>
+                    <strong>Cross-functional ownership over functional handoffs</strong><br>
+                    Engineering, regulatory, and clinical partners share responsibility for outcomes from day one.
+                </li>
+
+                <li>
+                    <strong>Audit readiness over audit panic</strong><br>
+                    Traceability and design controls are maintained continuously, not reconstructed under pressure.
+                </li>
+
+                <li>
+                    <strong>Learning-driven iteration over blind speed</strong><br>
+                    Iteration is purposeful, informed by data, risk, and regulatory constraints—not motion for motion’s sake.
+                </li>
+            </ol>
+
+            <p style="margin-top: 2rem;">
+                Both sides matter—but in regulated product development, the left is often the constraint that determines success.
+                This framing is inspired by the Agile Manifesto (Beck et al., 2001), adapted for highly regulated,
+                hardware-driven product development.
             </p>
         </section>
     </main>
 
-    <!-- ⭐ Added Contact link section -->
+    <!-- ⭐ Contact link added here -->
     <div class="contact-link">
         <a href="/contact/">Contact</a>
     </div>
